@@ -1,0 +1,4 @@
+config.json
+artifacts/**/*.json
+artifacts/**/*.csv
+node_modules/

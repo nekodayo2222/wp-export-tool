@@ -1,0 +1,22 @@
+{
+  "name": "wp-export-data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "csv-categories.js",
+  "scripts": {
+    "start": "npm run get:all && npm run csv:all",
+    "get:all": "npm run get:pages && npm run get:posts && npm run get:categories",
+    "csv:all": "npm run csv:pages && npm run csv:posts && npm run csv:categories",
+    "csv:pages": "node csv-pages.js",
+    "csv:posts": "node csv-posts.js",
+    "csv:categories": "node csv-categories.js",
+    "get:pages": "node get-pages.js",
+    "get:posts": "node get-posts.js",
+    "get:categories": "node get-categories.js"
+  },
+  "author": "Katsunori Kuroda <gh-contact@neko-room.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  }
+}
